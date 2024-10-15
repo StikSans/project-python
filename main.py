@@ -3,21 +3,21 @@ from kramosa import kramosa
 from gaus import gaus
 from revers_matrica import inverse_matrix_method
 
-GLOBAL_A = [
+A = [
   [2, -3, 1],
   [-3, 5, 3],
   [1, 1, -5]
   ]
-GLOBAL_B = [-1, -3, 2]
+B = [-1, -3, 2]
 
 
 
 def main():
   # A, B = value_console()
 
-  x, y, z = kramosa(GLOBAL_A, GLOBAL_B)
-  # x, y, z = gaus(GLOBAL_A, GLOBAL_B)
-  # x, y, z = inverse_matrix_method(GLOBAL_A, GLOBAL_B)
+  x, y, z = kramosa(A, B)
+  # x, y, z = gaus(A, B) g
+  # x, y, z = inverse_matrix_method(A, B)
 
   # print(result)
   print(f'Ответ: x: {x}, y: {y}, z: {z}')
